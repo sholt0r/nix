@@ -13,19 +13,19 @@
   outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, home-manager, ... }: {
     darwinConfigurations."mba" = nix-darwin.lib.darwinSystem {
       modules = [ 
-      	./darwin.nix
-        ./brew.nix
+      	./system/darwin.nix
+        ./system/brew.nix
 
         home-manager.darwinModules.home-manager
         {
           users.users.jstaples = {
-	    name = "jstaples";
-	    home = "/Users/jstaples";
-	  };
+	          name = "jstaples";
+	          home = "/Users/jstaples";
+	        };
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
-            users.jstaples = import ./home.nix;
+            users.jstaples = import ./home/home.nix;
           };
         }
 
@@ -37,10 +37,9 @@
             user = "jstaples";
           };
         }
-  
+
       ];
     };
-
     darwinPackages = self.darwinConfigurations."mba".pkgs;
   };
 }
