@@ -29,7 +29,7 @@
     starship = {
       enable = true;
       enableZshIntegration = true;
-      settings = import ./starship.nix
+      settings = import ./starship.nix;
     };
     zsh = {
       enable = true;

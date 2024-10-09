@@ -21,7 +21,6 @@
     pkgs.python3
     pkgs.ruby
     pkgs.rustup
-    pkgs.starship
     pkgs.stow
     pkgs.powershell
     pkgs.tmux

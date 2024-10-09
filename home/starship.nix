@@ -1,27 +1,6 @@
-{ config, ... }:
 {
   add_newline = true;
-  format = """
-    [ ](colour_bg0)\
-    $os\
-    $username\
-    $hostname\
-    $directory\
-    $git_branch\
-    $git_status\
-    $c\
-    $rust\
-    $golang\
-    $nodejs\
-    $php\
-    $java\
-    $kotlin\
-    $haskell\
-    $python\
-    $docker_context\
-    $conda\
-    $character
-  """;
+  format = "[ ](colour_bg0)$os$username$hostname$directory$git_branch$git_status$c$rust$golang$nodejs$php$java$kotlin$haskell$python$docker_context$conda$character";
 
   palette = "sholtor_dark";
 
@@ -52,7 +31,7 @@
   os = {
     disabled = false;
     style = "bg:colour_bg0 fg:colour_blue";
-    symbols = {;
+    symbols = {
       Alpaquita = " ";
       Alpine = " ";
       AlmaLinux = " ";
