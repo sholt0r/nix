@@ -3,16 +3,16 @@
   homebrew = {
     enable = true;
     brews = [
-	"mas"
-	"synergy-core"
+    	"mas"
+	    "synergy-core"
 	  ];
 	  casks = [
     	"discord"
-	"displaylink"
-	"firefox"
+	    "displaylink"
+	    "firefox"
 	    "iterm2"
       "obsidian"
-	"onedrive"
+	    "onedrive"
       "secretive"
       "spotify"
       "visual-studio-code"

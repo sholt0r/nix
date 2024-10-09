@@ -14,7 +14,7 @@
       userName = "sholt0r";
       extraConfig = {
         init.defaultBranch = "main";
-	core.editor = "nvim";
+      	core.editor = "nvim";
       };
     };
     home-manager = {
@@ -25,12 +25,11 @@
       enable = true;
       viAlias = true;
       vimAlias = true;
-      extraLuaConfig = ''
-      ${builtins.readFile ./nvim/init.lua}
-      '';
     };
-    starship.enable = true;
-    starship.enableZshIntegration = true;
+    starship = {
+      enable = true;
+      enableZshIntegration = true;
+    };
     zsh = {
       enable = true;
       enableCompletion = true;
@@ -43,9 +42,9 @@
         size = 100000;
       };
       sessionVariables = {
-        XDG_CONFIG_HOME = "~/.config/";
-        XDG_DATA_HOME = "~/.local/data/";
-        GIT_CONFIG_GLOBAL = "~/.config/git_global_config";
+        XDG_CONFIG_HOME = "$HOME/.config/";
+        XDG_DATA_HOME = "$HOME/.local/data/";
+        GIT_CONFIG_GLOBAL = "$HOME/.config/git_global_config";
       };
       shellAliases = {
         ls = "eza";
@@ -54,9 +53,7 @@
       bindkey "^[[H" beginning-of-line
       bindkey "^[[F" end-of-line
       bindkey "\e[3~" delete-char
-      eval "$(starship init zsh)"
       '';
     };
   };
-
 }
