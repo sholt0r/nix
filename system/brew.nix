@@ -20,6 +20,7 @@
     ];
     masApps = {
       "Bitwarden" = 1352778147;
+      "Magnet" = 441258766;
       "Microsoft Excel" = 462058435;
       "Microsoft Outlook" = 985367838;
       "Microsoft PowerPoint" = 462062816;
