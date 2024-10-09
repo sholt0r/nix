@@ -45,7 +45,7 @@
       sessionVariables = {
         XDG_CONFIG_HOME = "$HOME/.config/";
         XDG_DATA_HOME = "$HOME/.local/data/";
-        GIT_CONFIG_GLOBAL = "$HOME/.config/git_global_config";
+        GIT_CONFIG_GLOBAL = "$HOME/.config/git/config";
       };
       shellAliases = {
         ls = "eza";

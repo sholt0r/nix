@@ -10,7 +10,6 @@
     pkgs.fd
     pkgs.gcc
     pkgs.gh
-    pkgs.git
     pkgs.git-filter-repo
     pkgs.go
     pkgs.gnumake
