@@ -45,9 +45,10 @@
     zsh.enable = true;
   };
 
-  services.nix-daemon.enable = true;
   nix.package = pkgs.nix;
   nix.settings.experimental-features = "nix-command flakes";
-  system.stateVersion = 5;
   nixpkgs.hostPlatform = "aarch64-darwin";
+  security.pam.enableSudoTouchId = true;
+  services.nix-daemon.enable = true;
+  system.stateVersion = 5;
 }
