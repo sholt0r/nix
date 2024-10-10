@@ -1,5 +1,8 @@
 { config, lib, pkgs, ... }:
 {
+  imports = [
+    ./tmux.nix
+  ];
   home = {
     stateVersion = "24.05";
     sessionPath = [

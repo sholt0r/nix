@@ -1,6 +1,9 @@
 { self, pkgs, config, ... }:
 
 {
+  imports = [
+    ./touch-id.nix
+  ];
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = [
@@ -17,18 +20,16 @@
     pkgs.nixfmt-rfc-style
     pkgs.nodejs
     pkgs.openssl
+    pkgs.pam-reattach
     pkgs.python3
     pkgs.ruby
     pkgs.rustup
     pkgs.stow
     pkgs.powershell
-    pkgs.tmux
     pkgs.tshark
     pkgs.unzip
     pkgs.wget2
     pkgs.whois
-    pkgs.zsh
-    pkgs.zsh-autosuggestions
   ];
   
   fonts.packages = with pkgs; [
@@ -39,8 +40,6 @@
     name = "jstaples";
     home = "/Users/jstaples";
   };
-
-  security.pam.enableSudoTouchIdAuth = true;
 
   programs = {
     zsh.enable = true;

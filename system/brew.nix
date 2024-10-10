@@ -11,6 +11,7 @@
 	    "displaylink"
 	    "firefox"
 	    "iterm2"
+      "itermai"
       "obsidian"
 	    "onedrive"
       "secretive"
