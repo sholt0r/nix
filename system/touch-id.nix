@@ -1,6 +1,5 @@
 { config, lib, pkgs, ... }:
-{
-  with lib; let
+with lib; let
     cfg = config.security.pam;
   in {
     options = {
@@ -8,7 +7,6 @@
         Enable sudo auth with TouchID
       '';
     };
-  };
 
   config = lib.mkIf (cfg.enableSudoTouchId) {
     environment.etc."pam.d/sudo_local" = {
