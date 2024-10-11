@@ -4,20 +4,13 @@
     clock24 = true;
     keyMode = "vi";
     mouse = true;
-    shell = "$SHELL";
+    sensibleOnTop = false;
     extraConfig = ''
-      # Disregard bell rings
-      set -g visual-activity off
-      set -g visual-bell off
-      set -g visual-silence off
-      setw -g monitor-activity off
-      set -g bell-action none
-      
       # Clock mode
-      setw -g clock-mode-colour "fg=green bg=black"
+      setw -g clock-mode-colour "fg=green, bg=black"
       
       # Copy mode
-      setw -g mode-style "fg=cyan bg=black bold"
+      setw -g mode-style "fg=cyan, bg=black, bold"
       
       # Panes
       set -g pane-border-style "fg=black"
@@ -25,22 +18,23 @@
       
       # Statusbar
       set -g status-position bottom
-      set -g status-style "fg=black"
+      set -g status-style "fg=cyan bg=black"
       
       set -g status-left ""
       
-      set -g status-right '%Y-%m-%d %H:%M '
+      set -g status-right "%Y-%m-%d %H:%M "
       
-      setw -g window-status-current-style 'fg=black bg=cyan'
-      setw -g window-status-current-format ' #I #W #F '
+      setw -g window-status-current-style "fg=black,bg=cyan"
+      setw -g window-status-current-format " #I #W #F "
       
-      setw -g window-status-style 'fg=cyan bg=black'
-      setw -g window-status-format ' #I #[fg=white]#W #[fg=yellow]#F '
+      setw -g window-status-style "fg=cyan, bg=black"
+      setw -g window-status-format " #I #[fg=white]#W #[fg=yellow]#F impsons hit and run source code
+
       
-      setw -g window-status-bell-style 'fg=yellow bg=green bold'
+      setw -g window-status-bell-style "fg=yellow, bg=green bold"
       
       # messages
-      set -g message-style 'fg=yellow bg=green bold'
+      set -g message-style "fg=green, bg=black, bold"
     '';
   };
 }

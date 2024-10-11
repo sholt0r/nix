@@ -2,6 +2,7 @@
 {
   imports = [
     ./packages.nix
+    ./touch-id.nix
   ];
   nixpkgs.config.allowUnfree = true;
 
@@ -12,20 +13,10 @@
   networking = {
     hostName = "mba";
     computerName = "mba";
-  }
+  };
 
   programs = {
     zsh.enable = true;
-  };
-
-  system = {
-    defaults = {
-      CustomUserPreferences = {
-        "com.apple.security.authorization" = {
-          ignoreArd = 1;
-        };
-      };
-    };
   };
 
   users.users.jstaples = {
@@ -36,7 +27,7 @@
   nix.package = pkgs.nix;
   nix.settings.experimental-features = "nix-command flakes";
   nixpkgs.hostPlatform = "aarch64-darwin";
-  security.pam.enableSudoTouchIdAuth = true;
+  security.pam.enableSudoTouchId = true;
   services.nix-daemon.enable = true;
   system.stateVersion = 5;
 }

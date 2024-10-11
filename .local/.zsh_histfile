@@ -1,7 +1,0 @@
-: 1728537121:0;sudo su
-: 1728537220:0;cp /etc/pam.d/sudo_local ~?
-: 1728537222:0;cp /etc/pam.d/sudo_local ~/
-: 1728537224:0;ls -la
-: 1728537226:0;cd ~/
-: 1728538435:0;git add .
-: 1728538441:0;git commit -am "Changes to darwin config"

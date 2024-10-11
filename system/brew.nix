@@ -3,13 +3,20 @@
   homebrew = {
     enable = true;
     brews = [
+      "kompose"
+      "kubectl"
     	"mas"
+      "pam-reattach"
 	    "synergy-core"
+      "virt-manager"
 	  ];
 	  casks = [
     	"discord"
 	    "displaylink"
+      "docker"
 	    "firefox"
+      "gimp"
+      "google-chrome"
 	    "iterm2"
       "itermai"
       "obsidian"
@@ -18,6 +25,7 @@
       "spotify"
       "utm"
       "visual-studio-code"
+      "xemu"
     ];
     masApps = {
       "Bitwarden" = 1352778147;
