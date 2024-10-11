@@ -27,5 +27,6 @@
     pkgs.wget2
     pkgs.whois
     pkgs.zig
+    pkgs.zoxide
   ];
 }

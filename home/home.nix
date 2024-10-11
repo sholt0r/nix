@@ -34,6 +34,13 @@
       enableZshIntegration = true;
       settings = import ./starship.nix;
     };
+    zoxide = {
+      enable = true;
+      enableZshIntegration = true;
+      options = [
+        "--cmd cd"
+      ];
+    };
     zsh = {
       enable = true;
       enableCompletion = true;
@@ -53,6 +60,7 @@
       };
       shellAliases = {
         ls = "eza";
+        mba-rebuild = "darwin-rebuild switch --flake ~/.dotfiles/mac/.config/nix#mba";
       };
       initExtra = ''
       bindkey "^[[H" beginning-of-line
