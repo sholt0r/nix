@@ -6,15 +6,18 @@
     pkgs.dig
     pkgs.eza
     pkgs.fd
+    pkgs.fzf
     pkgs.gh
     pkgs.git-filter-repo
     pkgs.go
     pkgs.gnumake
     pkgs.mkalias
     pkgs.nixfmt-rfc-style
+    pkgs.nix-search-cli
     pkgs.nodejs
     pkgs.openssl
     pkgs.python3
+    pkgs.ripgrep
     pkgs.ruby
     pkgs.rustup
     pkgs.stow
