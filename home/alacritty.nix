@@ -7,7 +7,7 @@
   };
 
   window = {
-    startup_mode = "Fullscreen";
+    startup_mode = "Windowed";
     decorations = "Buttonless";
     dynamic_padding = false;
     dynamic_title = true;
@@ -29,7 +29,7 @@
   cursor.style = "Beam";
 
   shell = {
-    program = "/etc/profiles/per-user/jstaples/bin/zsh";
+    program = "/usr/bin/env zsh";
   };
 
   colors = {
