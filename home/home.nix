@@ -11,6 +11,10 @@
   };
 
   programs = {
+    alacritty = {
+      enable = true;
+      settings = import ./alacritty.nix;
+    };
     git = {
       enable = true;
       userEmail = "sholtor@kobu.au";

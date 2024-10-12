@@ -11,6 +11,7 @@
       "virt-manager"
 	  ];
 	  casks = [
+      "alacritty"
     	"discord"
 	    "displaylink"
       "docker"
