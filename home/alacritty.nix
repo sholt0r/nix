@@ -1,8 +1,6 @@
 {
-  general = {
-    live_config_reload = true;
-    working_directory = "~/";
-  };
+  live_config_reload = true;
+  working_directory = "~/";
 
   env = {
     "TERM" = "xterm-256color";
