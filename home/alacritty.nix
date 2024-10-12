@@ -1,17 +1,16 @@
 {
   live_config_reload = true;
-  working_directory = "$HOME";
+  shell = "/etc/profiles/per-user/jstaples/bin/zsh";
 
   env = {
     "TERM" = "xterm-256color";
   };
 
   window = {
-    startup_mode = "Windowed";
+    startup_mode = "SimpleFullscreen";
     decorations = "Buttonless";
-    dynamic_padding = false;
-    dynamic_title = true;
-    opacity = 0.9;
+    dynamic_padding = true;
+    opacity = 0.88;
     blur = true;
     padding.x = 10;
     padding.y = 10;
@@ -29,6 +28,9 @@
   cursor.style = "Beam";
 
   colors = {
+
+    transparent_background_colors = true;
+
     # Default colors
     primary = {
       background = "0x282b33";
