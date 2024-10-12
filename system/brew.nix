@@ -11,6 +11,7 @@
       "pinentry-mac"
       "pinentry-touchid"
 	    "synergy-core"
+      "talosctl"
       "virt-manager"
 	  ];
 	  casks = [
@@ -44,6 +45,7 @@
     };
     taps = [
       "jorgelbg/tap"
+      "siderolabs/tap"
     ];
   	onActivation.cleanup = "zap";
   	onActivation.autoUpdate = true;
