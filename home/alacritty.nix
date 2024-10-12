@@ -7,7 +7,7 @@
   };
 
   window = {
-    startup_mode = "SimpleFullscreen";
+    startup_mode = "Windowed";
     decorations = "Buttonless";
     dynamic_padding = true;
     opacity = 0.88;
