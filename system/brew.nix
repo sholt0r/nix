@@ -20,6 +20,7 @@
       "docker"
 	    "firefox"
       "gimp"
+      "gitbutler"
       "google-chrome"
 	    "iterm2"
       "itermai"
