@@ -3,10 +3,13 @@
   homebrew = {
     enable = true;
     brews = [
+      "gnupg"
       "kompose"
       "kubectl"
     	"mas"
       "pam-reattach"
+      "pinentry-mac"
+      "pinentry-touchid"
 	    "synergy-core"
       "virt-manager"
 	  ];
@@ -18,7 +21,6 @@
 	    "firefox"
       "gimp"
       "google-chrome"
-      "gpg-suite"
 	    "iterm2"
       "itermai"
       "obsidian"
@@ -39,6 +41,9 @@
       "Twingate" = 1501592214;
       "Windows App" = 1295203466;
     };
+    taps = [
+      "jorgelbg/tap"
+    ];
   	onActivation.cleanup = "zap";
   	onActivation.autoUpdate = true;
   	onActivation.upgrade = true;

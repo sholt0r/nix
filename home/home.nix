@@ -19,10 +19,13 @@
       enable = true;
       userEmail = "sholtor@kobu.au";
       userName = "sholt0r";
+      signing = {
+        key = "EC7E5597";
+        signByDefault = true;
+      };
       extraConfig = {
         init.defaultBranch = "main";
       	core.editor = "nvim";
-        gpg.format = "ssh";
       };
     };
     home-manager = {
