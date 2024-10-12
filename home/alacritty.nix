@@ -29,7 +29,7 @@
   cursor.style = "Beam";
 
   shell = {
-    program = "zsh";
+    program = "/usr/bin/env zsh";
   };
 
   colors = {
