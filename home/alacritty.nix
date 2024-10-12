@@ -1,6 +1,6 @@
 {
   live_config_reload = true;
-  working_directory = "~/";
+  working_directory = "$HOME";
 
   env = {
     "TERM" = "xterm-256color";
