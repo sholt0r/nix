@@ -3,21 +3,31 @@
     "TERM" = "xterm-256color";
   };
 
-  background_opacity = 0.95;
+  background_opacity = 0.9;
 
   window = {
+    decorations = "buttonless";
+    dynamic_padding = false;
     padding.x = 10;
     padding.y = 10;
-    decorations = "buttonless";
   };
 
   font = {
     size = 16.0;
     use_thin_strokes = true;
 
-    normal.family = "MesloLGS NF";
-    bold.family = "MesloLGS NF";
-    italic.family = "MesloLGS NF";
+    normal = {
+      family = "MesloLGS NF";
+      style = "Medium";
+    };
+    bold = {
+      family = "MesloLGS NF";
+      style = "Heavy";
+    };
+    italic = {
+      family = "MesloLGS NF";
+      style = "Medium Italic";
+    };
   };
 
   cursor.style = "Beam";
