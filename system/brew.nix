@@ -18,6 +18,7 @@
 	    "firefox"
       "gimp"
       "google-chrome"
+      "gpg-suite"
 	    "iterm2"
       "itermai"
       "obsidian"
