@@ -14,7 +14,6 @@
 
   font = {
     size = 16.0;
-    use_thin_strokes = true;
 
     normal = {
       family = "MesloLGS NF";
@@ -33,11 +32,7 @@
   cursor.style = "Beam";
 
   shell = {
-    program = "zsh";
-    args = [
-      "-C"
-      "neofetch"
-    ];
+    program = "/etc/profiles/per-user/jstaples/bin/zsh";
   };
 
   colors = {
