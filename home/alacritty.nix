@@ -29,7 +29,7 @@
   cursor.style = "Beam";
 
   shell = {
-    program = "/usr/bin/env zsh";
+    program = "/etc/profiles/per-user/jstaples/bin/zsh";
   };
 
   colors = {
