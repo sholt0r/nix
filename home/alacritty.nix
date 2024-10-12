@@ -1,13 +1,19 @@
 {
+  general = {
+    live_config_reload = true;
+    working_directory = "~/";
+  };
+
   env = {
     "TERM" = "xterm-256color";
   };
 
-  background_opacity = 0.9;
-
   window = {
     decorations = "buttonless";
     dynamic_padding = false;
+    dynamic_title = true;
+    opacity = 0.9;
+    blur = true;
     padding.x = 10;
     padding.y = 10;
   };
@@ -15,18 +21,10 @@
   font = {
     size = 16.0;
 
-    normal = {
-      family = "MesloLGS NF";
-      style = "Medium";
-    };
-    bold = {
-      family = "MesloLGS NF";
-      style = "Heavy";
-    };
-    italic = {
-      family = "MesloLGS NF";
-      style = "Medium Italic";
-    };
+    normal.family = "MesloLGS NF";
+    bold.family = "MesloLGS NF";
+    italic.family = "MesloLGS NF";
+    bold_italic.family = "MesloLGS NF";
   };
 
   cursor.style = "Beam";
