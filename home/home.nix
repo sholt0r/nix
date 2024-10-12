@@ -22,6 +22,7 @@
       extraConfig = {
         init.defaultBranch = "main";
       	core.editor = "nvim";
+        gpg.format = "ssh";
       };
     };
     home-manager = {
