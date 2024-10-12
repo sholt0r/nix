@@ -28,10 +28,6 @@
 
   cursor.style = "Beam";
 
-  shell = {
-    program = "/etc/profiles/per-user/jstaples/bin/zsh";
-  };
-
   colors = {
     # Default colors
     primary = {
