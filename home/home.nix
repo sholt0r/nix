@@ -20,7 +20,7 @@
       userEmail = "sholtor@kobu.au";
       userName = "sholt0r";
       signing = {
-        key = "EC7E5597";
+        key = "AE1E5906";
         signByDefault = true;
       };
       extraConfig = {
