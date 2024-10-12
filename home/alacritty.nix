@@ -7,7 +7,8 @@
   };
 
   window = {
-    decorations = "buttonless";
+    startup_mode = "Fullscreen";
+    decorations = "Buttonless";
     dynamic_padding = false;
     dynamic_title = true;
     opacity = 0.9;
