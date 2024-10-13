@@ -93,9 +93,6 @@
     ];
   };
 
-  # Install firefox.
-  programs.firefox.enable = true;
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -109,6 +106,10 @@
   #   enable = true;
   #   enableSSHSupport = true;
   # };
+
+  fonts.packages = with pkgs; [
+    (nerdfonts.override {fonts = ["GeistMono"];})
+  ];
 
   # List services that you want to enable:
 
