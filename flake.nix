@@ -45,7 +45,7 @@
 
     darwinConfigurations = {
       mba = nix-darwin.lib.darwinSystem {
-        system = "arm64-darwin";
+        system = "aarch64-darwin";
         modules = [ 
           ./systems/mba/config.nix
           ./systems/mba/brew.nix
