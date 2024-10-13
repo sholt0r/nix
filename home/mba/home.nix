@@ -68,7 +68,7 @@
       };
       shellAliases = {
         ls = "eza";
-        mba-rebuild = "darwin-rebuild switch --flake ~/.dotfiles/mac/.config/nix#mba";
+        mba-rebuild = "darwin-rebuild switch --flake ~/.dotfiles/nix/.config/nix#mba";
       };
       initExtra = ''
       bindkey "^[[H" beginning-of-line
