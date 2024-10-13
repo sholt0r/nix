@@ -18,11 +18,14 @@
 
   font = {
     size = 16.0;
-
-    normal.family = "MesloLGS NF";
-    bold.family = "MesloLGS NF";
-    italic.family = "MesloLGS NF";
-    bold_italic.family = "MesloLGS NF";
+    offset = {
+      x = 1;
+      y = 1;
+    };
+    normal.family = "GeistMono Nerd Font Mono";
+    bold.family = "GeistMono Nerd Font Mono";
+    italic.family = "GeistMono Nerd Font Mono";
+    bold_italic.family = "GeistMono Nerd Font Mono";
   };
 
   cursor.style = "Beam";

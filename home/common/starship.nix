@@ -1,6 +1,6 @@
 {
   add_newline = true;
-  format = "[ ](black)$os$username$hostname$directory$git_branch$git_status$c$rust$golang$nodejs$php$java$kotlin$haskell$python$docker_context$conda$character";
+  format = "$os$username$hostname$directory$git_branch$git_status$c$rust$golang$nodejs$php$java$kotlin$haskell$python$docker_context$conda$character";
 
   palette = "sholtor_dark";
 
@@ -30,7 +30,7 @@
 
   os = {
     disabled = false;
-    style = "bg:black fg:cyan";
+    style = "fg:cyan";
     symbols = {
       Alpaquita = " ";
       Alpine = " ";
@@ -53,13 +53,13 @@
       Kali = " ";
       Linux = " ";
       Mabox = " ";
-      Macos = " ";
+      Macos = " ";
       Manjaro = " ";
       Mariner = " ";
       MidnightBSD = " ";
       Mint = " ";
       NetBSD = " ";
-      NixOS = " ";
+      NixOS = "  ";
       OpenBSD = "󰈺 ";
       openSUSE = " ";
       OracleLinux = "󰌷 ";
@@ -80,8 +80,8 @@
 
   username = {
     show_always = true;
-    style_user = "bg:black fg:cyan bold";
-    style_root = "bg:black fg:colour_fg1 bold";
+    style_user = "fg:cyan bold";
+    style_root = "fg:red bold";
     format = "[ $user]($style)";
   };
 
@@ -90,12 +90,12 @@
     ssh_symbol = ":🌐";
     trim_at = ".";
     format = "[@$hostname$ssh_symbol]($style)";
-    style = "bg:black fg:cyan";
+    style = "fg:cyan";
   };
 
   directory = {
     format = "[:$path]($style)";
-    style = "bg:black fg:green";
+    style = "fg:green";
     home_symbol = "~";
     truncate_to_repo = false;
     use_os_path_sep = true;
@@ -103,87 +103,87 @@
 
   git_branch = {
     symbol = "";
-    style = "bg:black";
-    format = "[[ $symbol $branch ](fg:cyan bg:black)]($style)";
+    style = "";
+    format = "[[ $symbol $branch ](fg:cyan)]($style)";
   };
 
   git_status = {
-    style = "bg:black";
-    format = "[[($all_status$ahead_behind )](fg:cyan bg:black)]($style)";
+    style = "";
+    format = "[[($all_status$ahead_behind )](fg:cyan)]($style)";
   };
 
   nodejs = {
     symbol = "";
-    style = "bg:black";
-    format = "[[ $symbol( $version) ](fg:colour_node bg:black)]($style)";
+    style = "";
+    format = "[[ $symbol( $version) ](fg:colour_node)]($style)";
   };
 
   c = {
     symbol = " ";
-    style = "bg:black";
-    format = "[[ $symbol( $version) ](fg:colour_blue bg:black)]($style)";
+    style = "";
+    format = "[[ $symbol( $version) ](fg:colour_blue)]($style)";
   };
 
   rust = {
     symbol = "";
-    style = "bg:black";
-    format = "[[ $symbol( $version) ](fg:colour_blue bg:black)]($style)";
+    style = "";
+    format = "[[ $symbol( $version) ](fg:colour_blue)]($style)";
   };
 
   golang = {
     symbol = "";
-    style = "bg:black";
-    format = "[[ $symbol( $version) ](fg:colour_go bg:black)]($style)";
+    style = "";
+    format = "[[ $symbol( $version) ](fg:colour_go)]($style)";
   };
 
   php = {
     symbol = "";
-    style = "bg:black";
-    format = "[[ $symbol( $version) ](fg:colour_php bg:black)]($style)";
+    style = "";
+    format = "[[ $symbol( $version) ](fg:colour_php)]($style)";
   };
 
   java = {
     symbol = " ";
-    style = "bg:black";
-    format = "[[ $symbol( $version) ](fg:colour_java bg:black)]($style)";
+    style = "";
+    format = "[[ $symbol( $version) ](fg:colour_java)]($style)";
   };
 
   kotlin = {
     symbol = "";
-    style = "bg:black";
-    format = "[[ $symbol( $version) ](fg:colour_blue bg:black)]($style)";
+    style = "";
+    format = "[[ $symbol( $version) ](fg:colour_blue)]($style)";
   };
 
   haskell = {
     symbol = "";
-    style = "bg:black";
-    format = "[[ $symbol( $version) ](fg:colour_blue bg:black)]($style)";
+    style = "";
+    format = "[[ $symbol( $version) ](fg:colour_blue)]($style)";
   };
 
   python = {
     symbol = "";
-    style = "bg:black";
-    format = "[[ $symbol( $version) ](fg:colour_python bg:black)]($style)";
+    style = "";
+    format = "[[ $symbol( $version) ](fg:colour_python)]($style)";
   };
 
   docker_context = {
     symbol = "";
-    style = "bg:black";
-    format = "[[ $symbol( $context) ](fg:#83a598 bg:black)]($style)";
+    style = "";
+    format = "[[ $symbol( $context) ](fg:#83a598)]($style)";
   };
 
   conda = {
-    style = "bg:black";
-    format = "[[ $symbol( $environment) ](fg:#83a598 bg:black)]($style)";
+    style = "";
+    format = "[[ $symbol( $environment) ](fg:#83a598)]($style)";
   };
 
   character = {
     disabled = false;
-    success_symbol = "[ ❯](bg:black fg:green)[](fg:black)";
-    error_symbol = "[ ❯](bg:black fg:red)[](fg:black)";
-    vimcmd_symbol = "[ ❮](bg:black fg:green)[](fg:black)";
-    vimcmd_replace_one_symbol = "[ ❮](bg:black fg:purple)[](fg:black)";
-    vimcmd_replace_symbol = "[ ❮](bg:black fg:purple)[](fg:black)";
-    vimcmd_visual_symbol = "[ ❮](bg:black fg:yellow)[](fg:black)";
+    success_symbol = "[❯](fg:green)";
+    error_symbol = "[❯](fg:red)";
+    vimcmd_symbol = "[❮](fg:green)";
+    vimcmd_replace_one_symbol = "[❮](fg:purple)";
+    vimcmd_replace_symbol = "[❮](fg:purple)";
+    vimcmd_visual_symbol = "[❮](fg:yellow)";
   };
 }

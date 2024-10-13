@@ -7,6 +7,7 @@
   nixpkgs.config.allowUnfree = true;
 
   fonts.packages = with pkgs; [
+    (nerdfonts.override {fonts = ["GeistMono"];})
     meslo-lgs-nf
   ];
 
