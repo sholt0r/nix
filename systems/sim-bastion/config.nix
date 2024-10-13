@@ -81,18 +81,17 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
+  programs.zsh.enable = true;
   # Define a user account. Don't forget to set a password with ‘passwd’.
-#  users.users.sholtor = {
-#    isNormalUser = true;
-#    description = "sholtor";
-#    extraGroups = [ "networkmanager" "wheel" ];
-#    packages = with pkgs; [
-#    #  thunderbird
-#    ];
-#    openssh.authorizedKeys.keys = [
-#    	"ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOtCFBCu7nN716NbWeIy3j/G153VrRgK4skCgvO1S6NlD/Wql5HEUMlR6SV1jTk7OuoR0GJwFN4oD4N5puc1rdw="
-#    ];
-#  };
+  users.users.sholtor = {
+    isNormalUser = true;
+    description = "sholtor";
+    extraGroups = [ "networkmanager" "wheel" ];
+    shell = pkgs.zsh;
+    openssh.authorizedKeys.keys = [
+    	"ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOtCFBCu7nN716NbWeIy3j/G153VrRgK4skCgvO1S6NlD/Wql5HEUMlR6SV1jTk7OuoR0GJwFN4oD4N5puc1rdw="
+    ];
+  };
 
   # Install firefox.
   programs.firefox.enable = true;
