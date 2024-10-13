@@ -4,6 +4,7 @@
     enable = true;
     brews = [
       "ansible"
+      "ansible-lint"
       "gnupg"
       "kompose"
       "kubectl"
