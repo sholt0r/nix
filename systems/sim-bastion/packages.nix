@@ -1,8 +1,6 @@
 { pkgs, ... }:
 {
   environment.systemPackages = [
-    pkgs.bfg-repo-cleaner
-    pkgs.bws
     pkgs.curl
     pkgs.dig
     pkgs.eza
@@ -12,7 +10,6 @@
     pkgs.git-filter-repo
     pkgs.go
     pkgs.gnumake
-    pkgs.mkalias
     pkgs.netcat
     pkgs.nixfmt-rfc-style
     pkgs.nix-search-cli
