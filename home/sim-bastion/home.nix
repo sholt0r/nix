@@ -64,7 +64,7 @@
       };
       shellAliases = {
         ls = "eza";
-        bastion-rebuild = "darwin-rebuild switch --flake ~/.dotfiles/nix/.config/nix#sim-bastion";
+        bastion-rebuild = "nixos-rebuild switch --flake ~/.dotfiles/nix/.config/nix#sim-bastion";
       };
       initExtra = ''
       bindkey "^[[H" beginning-of-line
