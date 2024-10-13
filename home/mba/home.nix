@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 {
   imports = [
-    ./tmux.nix
+    ../common/tmux.nix
   ];
   home = {
     stateVersion = "24.05";
@@ -13,7 +13,7 @@
   programs = {
     alacritty = {
       enable = true;
-      settings = import ./alacritty.nix;
+      settings = import ../common/alacritty.nix;
     };
     git = {
       enable = true;
@@ -40,7 +40,7 @@
     starship = {
       enable = true;
       enableZshIntegration = true;
-      settings = import ./starship.nix;
+      settings = import ../common/starship.nix;
     };
     zoxide = {
       enable = true;
