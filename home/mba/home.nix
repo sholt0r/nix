@@ -15,9 +15,6 @@
       enable = true;
       settings = import ./alacritty.nix;
     };
-    firefox = {
-      enable = true;
-    };
     git = {
       enable = true;
       userEmail = "sholtor@kobu.au";

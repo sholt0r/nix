@@ -3,6 +3,7 @@
   homebrew = {
     enable = true;
     brews = [
+      "ansible"
       "gnupg"
       "kompose"
       "kubectl"

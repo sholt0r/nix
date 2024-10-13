@@ -179,11 +179,11 @@
 
   character = {
     disabled = false;
-    success_symbol = "[❯](fg:green)";
-    error_symbol = "[❯](fg:red)";
-    vimcmd_symbol = "[❮](fg:green)";
-    vimcmd_replace_one_symbol = "[❮](fg:purple)";
-    vimcmd_replace_symbol = "[❮](fg:purple)";
-    vimcmd_visual_symbol = "[❮](fg:yellow)";
+    success_symbol = "[\n❯](fg:green)";
+    error_symbol = "[\n❯](fg:red)";
+    vimcmd_symbol = "[\n❮](fg:green)";
+    vimcmd_replace_one_symbol = "[\n❮](fg:purple)";
+    vimcmd_replace_symbol = "[\n❮](fg:purple)";
+    vimcmd_visual_symbol = "[\n❮](fg:yellow)";
   };
 }
