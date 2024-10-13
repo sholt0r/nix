@@ -31,6 +31,7 @@
             users.users.sholtor = {
               name = "sholtor";
               home = "/home/sholtor";
+              isNormalUser = true;
             };
             home-manager = {
               useGlobalPkgs = true;
