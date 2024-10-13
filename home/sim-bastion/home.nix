@@ -19,10 +19,6 @@
       enable = true;
       userEmail = "sholtor@kobu.au";
       userName = "sholt0r";
-      signing = {
-        key = "AE1E5906";
-        signByDefault = true;
-      };
       extraConfig = {
         init.defaultBranch = "main";
       	core.editor = "nvim";
@@ -64,11 +60,11 @@
         XDG_CONFIG_HOME = "$HOME/.config/";
         XDG_DATA_HOME = "$HOME/.local/data/";
         GIT_CONFIG_GLOBAL = "$HOME/.config/git/config";
-        BWS_ACCESS_TOKEN = "$(security find-generic-password -w -s 'BWS_ACCESS_TOKEN' -a jstaples)";
+        BWS_ACCESS_TOKEN = "$(security find-generic-password -w -s 'BWS_ACCESS_TOKEN' -a sholtor)";
       };
       shellAliases = {
         ls = "eza";
-        mba-rebuild = "darwin-rebuild switch --flake ~/.dotfiles/nix/.config/nix#mba";
+        bastion-rebuild = "darwin-rebuild switch --flake ~/.dotfiles/nix/.config/nix#sim-bastion";
       };
       initExtra = ''
       bindkey "^[[H" beginning-of-line

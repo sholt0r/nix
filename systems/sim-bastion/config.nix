@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./packages.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -101,15 +102,6 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
-	git
-	gh
-  	neovim
-	wget
-	stow
-  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -122,18 +114,18 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-   services.openssh = {
+  services.openssh = {
    	enable = true;
-	ports = [ 22 ];
-	settings = {
-		PasswordAuthentication = false;
-		KbdInteractiveAuthentication = false;
-		AllowUsers = null;
-		UseDns = true;
-		X11Forwarding = true;
-		PermitRootLogin = "no";
-	};
-   };
+	  ports = [ 22 ];
+	  settings = {
+      PasswordAuthentication = false;
+      KbdInteractiveAuthentication = false;
+      AllowUsers = null;
+      UseDns = true;
+      X11Forwarding = true;
+      PermitRootLogin = "no";
+    };
+  };
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
