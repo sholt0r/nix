@@ -35,7 +35,7 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.jstaples = import ./home/sim-bastion/home.nix;
+              users.sholtor = import ./home/sim-bastion/home.nix;
             };
           }
 
