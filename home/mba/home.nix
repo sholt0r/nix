@@ -67,6 +67,7 @@
         XDG_DATA_HOME = "$HOME/.local/data";
         GIT_CONFIG_GLOBAL = "$HOME/.config/git/config";
         KUBECONFIG = "$HOME/.config/kube/config";
+        TALOSCONFIG = "$HOME/.config/talos/config";
         BWS_ACCESS_TOKEN = "$(security find-generic-password -w -s 'BWS_ACCESS_TOKEN' -a jstaples)";
       };
       shellAliases = {
