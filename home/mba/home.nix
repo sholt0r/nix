@@ -32,7 +32,7 @@
     };
     home-manager = {
       enable = true;
-      path = "$HOME/.config/nix-darwin/nixpkgs/";
+      path = "$XDG_CONFIG_HOME/nix-darwin/nixpkgs/";
     };
     neovim = {
       enable = true;
@@ -65,10 +65,9 @@
       sessionVariables = {
         XDG_CONFIG_HOME = "$HOME/.config/";
         XDG_DATA_HOME = "$HOME/.local/data/";
-        GIT_CONFIG_GLOBAL = "$HOME/.config/git/config";
+        GIT_CONFIG_GLOBAL = "$XDG_CONFIG_HOME/git/config";
+        KUBECONFIG = "$XDG_CONFIG_HOME/kube/config";
         BWS_ACCESS_TOKEN = "$(security find-generic-password -w -s 'BWS_ACCESS_TOKEN' -a jstaples)";
-        PX_TOKEN = "px@pam!px-token=$(security find-generic-password -w -s 'PX_TOKEN' -a jstaples)";
-        PX_HOST = "pve1.lan.kobu.au";
       };
       shellAliases = {
         ls = "eza";
