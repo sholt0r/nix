@@ -74,6 +74,7 @@
       bindkey "^[[H" beginning-of-line
       bindkey "^[[F" end-of-line
       bindkey "\e[3~" delete-char
+      source ~/.talos/completion.zsh.inc
       source <(fzf --zsh)
       '';
     };
