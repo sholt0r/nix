@@ -65,8 +65,8 @@
       sessionVariables = {
         XDG_CONFIG_HOME = "$HOME/.config";
         XDG_DATA_HOME = "$HOME/.local/data";
-        GIT_CONFIG_GLOBAL = "$XDG_CONFIG_HOME/git/config";
-        KUBECONFIG = "$XDG_CONFIG_HOME/kube/config";
+        GIT_CONFIG_GLOBAL = "$HOME/.config/git/config";
+        KUBECONFIG = "$HOME/.config/kube/config";
         BWS_ACCESS_TOKEN = "$(security find-generic-password -w -s 'BWS_ACCESS_TOKEN' -a jstaples)";
       };
       shellAliases = {
