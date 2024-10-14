@@ -63,8 +63,8 @@
         size = 100000;
       };
       sessionVariables = {
-        XDG_CONFIG_HOME = "$HOME/.config/";
-        XDG_DATA_HOME = "$HOME/.local/data/";
+        XDG_CONFIG_HOME = "$HOME/.config";
+        XDG_DATA_HOME = "$HOME/.local/data";
         GIT_CONFIG_GLOBAL = "$XDG_CONFIG_HOME/git/config";
         KUBECONFIG = "$XDG_CONFIG_HOME/kube/config";
         BWS_ACCESS_TOKEN = "$(security find-generic-password -w -s 'BWS_ACCESS_TOKEN' -a jstaples)";
@@ -77,7 +77,8 @@
       bindkey "^[[H" beginning-of-line
       bindkey "^[[F" end-of-line
       bindkey "\e[3~" delete-char
-      source ~/.talos/completion.zsh.inc
+      source $XDG_CONFIG_HOME/talos/completion.zsh.inc
+      source $XDG_CONFIG_HOME/kube/completion.zsh.inc
       source <(fzf --zsh)
       '';
     };
