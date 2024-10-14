@@ -3,10 +3,12 @@
   imports = [
     ../common/tmux.nix
   ];
+
   home = {
     stateVersion = "24.05";
     sessionPath = [
       "/opt/homebrew/bin"
+      "$HOME/.local/bin"
     ];
   };
 
@@ -65,6 +67,9 @@
         XDG_DATA_HOME = "$HOME/.local/data/";
         GIT_CONFIG_GLOBAL = "$HOME/.config/git/config";
         BWS_ACCESS_TOKEN = "$(security find-generic-password -w -s 'BWS_ACCESS_TOKEN' -a jstaples)";
+        PX_TOKEN = "px@pam!px-token=$(security find-generic-password -w -s 'PX_TOKEN' -a jstaples)";
+        PX_HOST = "pve1.lan.kobu.au";
+        KUBECONFIG = "/Users/jstaples/Infra/talos-kobu/kubeconfig";
       };
       shellAliases = {
         ls = "eza";

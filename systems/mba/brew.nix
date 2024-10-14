@@ -6,6 +6,8 @@
       "ansible"
       "ansible-lint"
       "gnupg"
+      "helm"
+      "k9s"
       "kompose"
       "kubectl"
     	"mas"
@@ -14,7 +16,6 @@
       "pinentry-touchid"
 	    "synergy-core"
       "talosctl"
-      "virt-viewer"
 	  ];
 	  casks = [
       "alacritty"
@@ -46,7 +47,6 @@
       "Windows App" = 1295203466;
     };
     taps = [
-      "jeffreywildman/homebrew-virt-manager"
       "jorgelbg/tap"
       "siderolabs/tap"
     ];
