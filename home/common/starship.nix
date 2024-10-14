@@ -1,6 +1,6 @@
 {
   add_newline = true;
-  format = "$os$username$hostname$directory$git_branch$git_status$c$rust$golang$nodejs$php$java$kotlin$haskell$python$docker_context$conda$character";
+  format = "$os$username$hostname$directory$git_branch$git_status$c$rust$golang$nodejs$php$java$kotlin$haskell$python$docker_context$kubernetes$conda$character";
 
   palette = "sholtor_dark";
 
@@ -103,78 +103,70 @@
 
   git_branch = {
     symbol = "";
-    style = "";
-    format = "[[ $symbol $branch ](fg:cyan)]($style)";
+    format = "[ $symbol $branch ](fg:cyan)";
   };
 
   git_status = {
-    style = "";
-    format = "[[($all_status$ahead_behind )](fg:cyan)]($style)";
+    format = "[($all_status$ahead_behind )](fg:cyan)";
   };
 
   nodejs = {
     symbol = "";
-    style = "";
-    format = "[[ $symbol( $version) ](fg:colour_node)]($style)";
+    format = "[ $symbol( $version) ](fg:colour_node)";
   };
 
   c = {
     symbol = " ";
-    style = "";
-    format = "[[ $symbol( $version) ](fg:colour_blue)]($style)";
+    format = "[ $symbol( $version) ](fg:colour_blue)";
   };
 
   rust = {
     symbol = "";
-    style = "";
-    format = "[[ $symbol( $version) ](fg:colour_blue)]($style)";
+    format = "[ $symbol( $version) ](fg:colour_blue)";
   };
 
   golang = {
     symbol = "";
-    style = "";
-    format = "[[ $symbol( $version) ](fg:colour_go)]($style)";
+    format = "[ $symbol( $version) ](fg:colour_go)";
   };
 
   php = {
     symbol = "";
-    style = "";
-    format = "[[ $symbol( $version) ](fg:colour_php)]($style)";
+    format = "[ $symbol( $version) ](fg:colour_php)";
   };
 
   java = {
     symbol = " ";
-    style = "";
-    format = "[[ $symbol( $version) ](fg:colour_java)]($style)";
+    format = "[ $symbol( $version) ](fg:colour_java)";
   };
 
   kotlin = {
     symbol = "";
-    style = "";
-    format = "[[ $symbol( $version) ](fg:colour_blue)]($style)";
+    format = "[ $symbol( $version) ](fg:colour_blue)";
   };
 
   haskell = {
     symbol = "";
-    style = "";
-    format = "[[ $symbol( $version) ](fg:colour_blue)]($style)";
+    format = "[ $symbol( $version) ](fg:colour_blue)";
   };
 
   python = {
     symbol = "";
-    style = "";
-    format = "[[ $symbol( $version) ](fg:colour_python)]($style)";
+    format = "[ $symbol( $version) ](fg:colour_python)";
   };
 
   docker_context = {
     symbol = "";
-    style = "";
-    format = "[[ $symbol( $context) ](fg:#83a598)]($style)";
+    format = "[ $symbol( $context) ](fg:#83a598)";
+  };
+
+  kubernetes = {
+    symbol = "󱃾";
+    format = "via [ $symbol( $context(\($namespace\))) ](fg:#326CE5)";
   };
 
   conda = {
-    style = "";
-    format = "[[ $symbol( $environment) ](fg:#83a598)]($style)";
+    format = "[ $symbol( $environment) ](fg:#83a598)";
   };
 
   character = {
