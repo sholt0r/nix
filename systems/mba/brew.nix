@@ -14,7 +14,7 @@
       "pinentry-touchid"
 	    "synergy-core"
       "talosctl"
-      "virt-manager"
+      "virt-viewer"
 	  ];
 	  casks = [
       "alacritty"
@@ -46,6 +46,7 @@
       "Windows App" = 1295203466;
     };
     taps = [
+      "jeffreywildman/homebrew-virt-manager"
       "jorgelbg/tap"
       "siderolabs/tap"
     ];
