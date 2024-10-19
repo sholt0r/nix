@@ -62,6 +62,18 @@
         save = 100000;
         size = 100000;
       };
+#      plugins = [
+#      {
+#        name = "powerlevel10k";
+#        src = pkgs.zsh-powerlevel10k;
+#        file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+#      }
+#      {
+#        name = "powerlevel10k-config";
+#        src = lib.cleanSource ../common/p10k;
+#        file = "p10k.zsh";
+#      }
+#      ];
       sessionVariables = {
         XDG_CONFIG_HOME = "$HOME/.config";
         XDG_DATA_HOME = "$HOME/.local/data";

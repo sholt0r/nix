@@ -14,6 +14,7 @@
       "pam-reattach"
       "pinentry-mac"
       "pinentry-touchid"
+      "steam"
 	    "synergy-core"
       "talosctl"
 	  ];
@@ -26,8 +27,6 @@
       "gimp"
       "gitbutler"
       "google-chrome"
-	    "iterm2"
-      "itermai"
       "obsidian"
 	    "onedrive"
       "secretive"
