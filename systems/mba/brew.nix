@@ -14,7 +14,6 @@
       "pam-reattach"
       "pinentry-mac"
       "pinentry-touchid"
-      "steam"
 	    "synergy-core"
       "talosctl"
 	  ];
@@ -31,6 +30,7 @@
 	    "onedrive"
       "secretive"
       "spotify"
+      "steam"
       "utm"
       "visual-studio-code"
       "xemu"
