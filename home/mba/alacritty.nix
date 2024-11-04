@@ -1,6 +1,5 @@
 {
-  live_config_reload = true;
-  shell = "/etc/profiles/per-user/jstaples/bin/zsh";
+  terminal.shell = "/etc/profiles/per-user/jstaples/bin/zsh";
 
   env = {
     "TERM" = "xterm-256color";
