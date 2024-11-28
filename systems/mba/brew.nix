@@ -16,6 +16,7 @@
       "pinentry-touchid"
 	    "synergy-core"
       "talosctl"
+      "wireguard-tools"
 	  ];
 	  casks = [
       "alacritty"

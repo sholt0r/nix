@@ -58,7 +58,7 @@
       autosuggestion.strategy = ["history" "completion" "match_prev_cmd"];
       syntaxHighlighting.enable = true;
       history = {
-        path = "$HOME/.local/.zsh_histfile";
+        path = "$HOME/.local/.zsh_histfile:$HOME/go/bin";
         save = 100000;
         size = 100000;
       };
@@ -79,7 +79,6 @@
         XDG_DATA_HOME = "$HOME/.local/data";
         GIT_CONFIG_GLOBAL = "$HOME/.config/git/config";
         KUBECONFIG = "$HOME/.config/kube/config";
-        TALOSCONFIG = "$HOME/.config/talos/config";
         BWS_ACCESS_TOKEN = "$(security find-generic-password -w -s 'BWS_ACCESS_TOKEN' -a jstaples)";
       };
       shellAliases = {
