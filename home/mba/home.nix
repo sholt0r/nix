@@ -9,6 +9,7 @@
     sessionPath = [
       "/opt/homebrew/bin"
       "$HOME/.local/bin"
+      "$HOME/go/bin"
     ];
   };
 
@@ -58,7 +59,7 @@
       autosuggestion.strategy = ["history" "completion" "match_prev_cmd"];
       syntaxHighlighting.enable = true;
       history = {
-        path = "$HOME/.local/.zsh_histfile:$HOME/go/bin";
+        path = "$HOME/.local/.zsh_histfile";
         save = 100000;
         size = 100000;
       };
