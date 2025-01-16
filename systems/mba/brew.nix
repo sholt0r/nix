@@ -28,6 +28,7 @@
 	    "firefox"
       "gimp"
       "gitbutler"
+      "git-credential-manager"
       "google-chrome"
       "obsidian"
 	    "onedrive"
