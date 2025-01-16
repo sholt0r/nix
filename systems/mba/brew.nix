@@ -28,7 +28,7 @@
 	    "firefox"
       "gimp"
       "gitbutler"
-      "git-credential-manager"
+      "git-credential-manager-core"
       "google-chrome"
       "obsidian"
 	    "onedrive"
