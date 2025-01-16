@@ -52,6 +52,7 @@
     taps = [
       "jorgelbg/tap"
       "siderolabs/tap"
+      "microsoft/git"
     ];
   	onActivation.cleanup = "zap";
   	onActivation.autoUpdate = true;
