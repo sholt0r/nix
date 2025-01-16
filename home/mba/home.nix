@@ -30,7 +30,7 @@
         init.defaultBranch = "main";
       	core.editor = "nvim";
         credential.helper = "manager";
-        credential.credentialStore = "cache";
+        credential.credentialStore = "keychain";
       };
     };
     home-manager = {
