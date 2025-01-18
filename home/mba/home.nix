@@ -29,7 +29,7 @@
       extraConfig = {
         init.defaultBranch = "main";
       	core.editor = "nvim";
-        credential.helper = "manager";
+        credential.helper = "manager-core";
         credential.credentialStore = "keychain";
       };
     };
